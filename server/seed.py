@@ -32,7 +32,7 @@ with app.app_context():
             name = fake.first_name()
         names.append(name)
 
-        bg = BakedGood(
+        bg = baked_goods(
             name=name,
             price=randint(1,10),
             bakery=rc(bakeries)
